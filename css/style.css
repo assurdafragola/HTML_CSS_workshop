@@ -273,19 +273,19 @@ body {
 
 /* section header */
 
-.prices_header {
+.prices_header, .contact_header {
     flex-direction: column;
     margin-top: 70px;
     margin-bottom: 30px;
 }
 
-.prices_header_text {
+.prices_header_text, .contact_header_text {
     font-size: 36px;
     font-weight: 500;
     margin-bottom: 15px;
 }
 
-.prices_header_decoration {
+.prices_header_decoration, .contact_header_decoration {
     width: 500px;
     height: 13px;
     background-color: #24ba9f;
@@ -451,4 +451,114 @@ body {
 
 .prices_plan_header.prices_plan_header_standard {
     color: #ffffff;
+}
+
+/* kontakt */
+
+.contact {
+    flex-direction: column;
+    background-color: #ffffff;
+    height: 1150px;
+    padding: 0 115px;
+}
+
+.contact_form {
+    width: 100%;
+    
+}
+
+.contact_form_left {
+    flex-direction: column;
+    width: 1010px;
+    margin-top: 40px;
+}
+
+.contact_form_text {
+    border: 2.5px solid rgba(36, 186, 159, 0.3);
+    font-size: 50px;
+    font-weight: lighter;
+    padding: 20px;
+    box-sizing: border-box;
+    margin-bottom: 40px;
+    vertical-align: middle;
+    color:grey;
+    
+}
+
+.contact_form_text::placeholder {
+    color: grey;
+    opacity: 0.3;
+}
+
+.contact_form_name, .contact_form_email {
+    height: 105px;
+}
+
+.contact_form_message {
+    height: 300px;
+}
+
+.contact_form_right {
+    flex-direction: column;
+    color: grey;
+    align-items: center;
+    width: 650px;
+    justify-content: space-between;
+}
+
+.contact_form_img {
+    height: 330px;
+}
+
+.contact_form_consent {
+    margin-left: 80px;
+    margin-bottom: 25px;
+    display: block;
+    position: relative;
+    cursor: pointer;
+    font-size: 28px;
+    padding-left: 90px;
+    padding-top: 10px;
+}
+
+.contact_form_consent input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.contact_form_consent span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 70px;
+    width: 70px;
+    border: 2px solid rgba(36, 186, 159, 0.3);;
+}
+
+.contact_form_consent:hover input ~ span {
+    border: 3px solid rgb(36, 186, 159);;
+}
+
+.contact_form_consent input:checked ~ span {
+    background-image: url(../Warsztaty/images/form_ok.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+  }
+
+
+.contact_form_submit {
+    margin-bottom: 40px;
+    width: 500px;
+    height: 110px;
+    border: none;
+    border-radius: 10px;
+    background-color: #24ba9f;
+    font-size: 50px;
+    font-weight: 700;
+    color: white;
+
 }

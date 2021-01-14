@@ -9,8 +9,8 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
 	margin: 0;
@@ -28,7 +28,7 @@ a {
 
 
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
@@ -192,12 +192,15 @@ body {
 .offer {
     padding: 45px 110px;
     justify-content: space-between;
+    height: 470px;
 }
 
 .offer_element {
     width: 520px;
     height: 360px;
     border: 2px solid rgba(110, 110, 110, 0.2);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .offer_description {
@@ -212,14 +215,11 @@ body {
 
 .offer_first {
     background-image: url("../Warsztaty/images/box1_img.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+
 }
 
 .offer_second {
     background-image: url("../Warsztaty/images/box2_img.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .offer_title {
@@ -254,7 +254,7 @@ body {
     padding-bottom: 15px;
 }
 
-.offer_description .offer_title_text {
+.offer_title_text {
     font-size: 24px;
     font-weight: 700;
     margin-top: 20px;
@@ -262,3 +262,193 @@ body {
 }
 
 
+/* prices */
+
+.prices {
+    flex-direction: column;
+    background-color: #f1f1f1;
+    height: 1150px;
+    padding: 0 105px;
+}
+
+/* section header */
+
+.prices_header {
+    flex-direction: column;
+    margin-top: 70px;
+    margin-bottom: 30px;
+}
+
+.prices_header_text {
+    font-size: 36px;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.prices_header_decoration {
+    width: 500px;
+    height: 13px;
+    background-color: #24ba9f;
+}
+
+/* price plan */
+.prices_plans {
+    box-sizing: border-box;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: auto;
+    padding-right: 25px;
+}
+
+.prices_plan {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    border: 3px solid #d3d3d3;
+    background-color: #f9f9f9;
+    width: 520px;
+    height: 800px;
+    margin-top: 85px;
+    padding-top: 45px;
+    padding-bottom: 25px;
+    box-sizing: border-box;
+    position: relative;
+}
+
+.prices_plan:before {
+    content: "";
+    display: block;
+    height: 40px;
+    width: 40px;
+    position: absolute;
+    background-color: #c0c0c0;
+    top: -35px;
+    border-radius: 50%;
+    z-index: 2;
+}
+
+.prices_plan:after {
+    content: "";
+    display: block;
+    height: 85px;
+    width: 85px;
+    position: absolute;
+    background-color: #fcfcfc;
+    top: -60px;
+    border-radius: 50%;
+    z-index: 1;
+    border: 3px solid #d3d3d3;
+}
+
+
+.prices_plan.prices_plan_standard:before {
+    background-color:#f9f9f9;
+}
+
+.prices_plan.prices_plan_standard:after {
+    background-color: #24ba9f;
+}
+
+
+.prices_plan_header {
+    font-size: 38px;
+    font-weight: 500;
+    color: #24ba9f;
+}
+
+.prices_plan_price{
+    background-color: #ffffff;
+    border: 3px solid #d3d3d3;
+    color: #9e9e9e;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    position: relative;
+    margin-top: 45px;
+}
+
+.price_pln {
+    font-weight: 700;
+    font-size: 70px;
+    position: absolute;
+    top: 46px;
+    left: 54px;
+}
+
+.price_pln_advance.price_pln {
+    left: 30px;
+}
+
+.price_gr {
+    font-weight: 700;
+    font-size: 24px;
+    position: absolute;
+    top: 46px;
+    left: 134px;
+}
+
+.price_descr {
+    font-weight: 700;
+    font-size: 25px;
+    position: absolute;
+    top: 130px;
+    left: 40px;
+}
+
+.prices_plan_terms {
+    font-size: 38px;
+    text-align: center;
+    margin-top: 55px;
+    color: #9e9e9e;
+    font-weight: 500;
+    height: 280px;
+
+}
+
+.prices_plan_terms li {
+    height: 70px;
+    width: 514px;
+    line-height: 70px;
+}
+
+.terms_main, .terms_warranty{
+    background-color: #e4e4e4;
+}
+.terms_service, .terms_designer{
+    background-color: #f1f1f1;
+}
+
+.prices_plan_button {
+    margin-top: 40px;
+    height: 55px;
+    width: 200px;
+    
+    font-size: 26px;
+    font-weight: 400;
+    color: #ffffff;
+
+    background-color: #24ba9f;
+
+    border: none;
+    border-radius:10px;
+}
+
+.prices_plan.prices_plan_standard {
+    background-color: #24ba9f;
+}
+
+.prices_plan_button.prices_plan_button_standard {
+    background-color: #ffffff;
+    color: #24ba9f;
+}
+
+.prices_plan_button.prices_plan_button_standard:hover {
+    cursor: pointer;
+    background-color: #156e5e;
+    color: #ffffff;
+}
+
+.prices_plan_header.prices_plan_header_standard {
+    color: #ffffff;
+}

@@ -458,7 +458,6 @@ body {
 .contact {
     flex-direction: column;
     background-color: #ffffff;
-    height: 1150px;
     padding: 0 115px;
 }
 
@@ -561,4 +560,39 @@ body {
     font-weight: 700;
     color: white;
 
+}
+
+.footer {
+    
+}
+
+.footer_copyright {
+    font-size: 24px;
+    letter-spacing: 2px;
+    padding: 120px 105px;
+    margin-right: 340px;
+    color: grey;
+}
+
+.footer img {
+    padding-top: 100px;
+    padding-right: 7px;
+    width: 55px;
+    height: 55px;
+
+}
+
+.footer_logo {
+    font-size: 32px;
+    font-weight: 600;
+    letter-spacing: 1px;
+
+    padding-top: 115px;
+    padding-left: 100px;
+    color: grey;
+
+}
+
+.footer_logo .marked {
+    color: grey;
 }

@@ -118,10 +118,44 @@ body {
     font-weight: 700;
     font-size: 22px;
     letter-spacing: 1px;
+    position: relative;
 }
 
+.header_nav_element:hover .header_nav_element_options{
+    display: inline-block;
+}
+
+.header_nav_element_options {
+    display: none;
+    position: absolute;
+    width: 200px;
+    top: 55px;
+    left: -10px;
+    color: white;
+    background-color: black;
+    font-weight: 500;
+    padding: 10px 20px;
+    box-sizing: border-box;
+}
+
+.header_nav_element_options::before {
+    content: "";
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    transform: rotate(45deg);
+    top: -5px;
+    left: 55px;
+    background-color: black
+    
+}
+
+.header_nav_element_options>li {
+    padding: 5px;
+} 
+
 .header_nav_element:hover {
-   color: #24ba9f   ;
+   color: #24ba9f;
    cursor: pointer;
 }
 
@@ -560,10 +594,6 @@ body {
     font-weight: 700;
     color: white;
 
-}
-
-.footer {
-    
 }
 
 .footer_copyright {
